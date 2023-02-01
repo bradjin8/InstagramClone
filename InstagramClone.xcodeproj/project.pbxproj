@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5788D3812988FB2400C4A2DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5788D37F2988FB2400C4A2DD /* Main.storyboard */; };
 		57AF98A7298257AD00EEEB46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF98A6298257AD00EEEB46 /* AppDelegate.swift */; };
 		57AF98A9298257AD00EEEB46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF98A8298257AD00EEEB46 /* SceneDelegate.swift */; };
-		57AF98AE298257AD00EEEB46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF98AC298257AD00EEEB46 /* Main.storyboard */; };
 		57AF98B3298257AF00EEEB46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF98B1298257AF00EEEB46 /* LaunchScreen.storyboard */; };
 		57AF98BE298257AF00EEEB46 /* InstagramCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF98BD298257AF00EEEB46 /* InstagramCloneTests.swift */; };
 		57AF98C8298257AF00EEEB46 /* InstagramCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF98C7298257AF00EEEB46 /* InstagramCloneUITests.swift */; };
@@ -38,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5788D3802988FB2400C4A2DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57AF98A3298257AD00EEEB46 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AF98A6298257AD00EEEB46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57AF98A8298257AD00EEEB46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57AF98AD298257AD00EEEB46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57AF98B2298257AF00EEEB46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57AF98B4298257AF00EEEB46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57AF98B9298257AF00EEEB46 /* InstagramCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +109,7 @@
 				57AF98D8298257DA00EEEB46 /* Controller */,
 				57AF98A6298257AD00EEEB46 /* AppDelegate.swift */,
 				57AF98A8298257AD00EEEB46 /* SceneDelegate.swift */,
-				57AF98AC298257AD00EEEB46 /* Main.storyboard */,
+				5788D37F2988FB2400C4A2DD /* Main.storyboard */,
 				57AF98B1298257AF00EEEB46 /* LaunchScreen.storyboard */,
 				57AF9918298266DE00EEEB46 /* Assets.xcassets */,
 				57AF98B4298257AF00EEEB46 /* Info.plist */,
@@ -272,9 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5788D3812988FB2400C4A2DD /* Main.storyboard in Resources */,
 				57AF98B3298257AF00EEEB46 /* LaunchScreen.storyboard in Resources */,
 				57AF9919298266DE00EEEB46 /* Assets.xcassets in Resources */,
-				57AF98AE298257AD00EEEB46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +340,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		57AF98AC298257AD00EEEB46 /* Main.storyboard */ = {
+		5788D37F2988FB2400C4A2DD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				57AF98AD298257AD00EEEB46 /* Base */,
+				5788D3802988FB2400C4A2DD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
