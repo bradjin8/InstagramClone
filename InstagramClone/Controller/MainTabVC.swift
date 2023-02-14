@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MainTabVC: UITabBarController, UITabBarControllerDelegate {
 
@@ -15,7 +16,11 @@ class MainTabVC: UITabBarController, UITabBarControllerDelegate {
         // delegate
         self.delegate = self
         
+        // configure view controllers
         configureViewControllers()
+        
+        // user validation
+        checkIfUserIsLoggedIn()
     }
     
     // function to create view controllers that exist within tab bar controller
@@ -28,7 +33,7 @@ class MainTabVC: UITabBarController, UITabBarControllerDelegate {
         let searchVC = constructNavController(unselectedImage: UIImage(named: "search_unselected")!, selectedImage: UIImage(named: "search_selected")!, rootViewController: SearchVC())
 
         // post controller
-        let uploadPostVC = constructNavController(unselectedImage: UIImage(named: "plus_unselected")!, selectedImage: UIImage(named: "plus_photo")!, rootViewController: UploadPostVC())
+        let uploadPostVC = constructNavController(unselectedImage: UIImage(named: "plus_unselected")!, selectedImage: UIImage(named: "plus_unselected")!, rootViewController: UploadPostVC())
 
         // notification controller
         let notificationVC = constructNavController(unselectedImage: UIImage(named: "like_unselected")!, selectedImage: UIImage(named: "like_selected")!, rootViewController: NotificationsVC())
@@ -42,6 +47,7 @@ class MainTabVC: UITabBarController, UITabBarControllerDelegate {
         
         // tab bar tint color
         tabBar.tintColor = .black
+        tabBar.backgroundColor = .white
     }
 
     // contruct navigation controllers
@@ -54,5 +60,21 @@ class MainTabVC: UITabBarController, UITabBarControllerDelegate {
         navController.navigationBar.tintColor = .black
         
         return navController
+    }
+    
+    func checkIfUserIsLoggedIn () {
+        if Auth.auth().currentUser == nil {
+            print("No current user")
+            
+            DispatchQueue.main.async {
+                // present login controller
+                let loginVC = LoginVC()
+                let navController = UINavigationController(rootViewController: loginVC)
+                self.present(navController, animated: true, completion: nil)
+            }
+            
+            return
+        }
+        
     }
 }
